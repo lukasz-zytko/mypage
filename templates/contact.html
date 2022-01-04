@@ -1,0 +1,20 @@
+{% extends "home.html" %}
+{% block head %}
+<title>Kontakt | Łukasz Żytko</title>
+{% endblock %}
+{% block content %}
+<h2>Kontakt</h2>
+    <ul>
+        <li>email: zytko.lukasz@gmail.com</li>
+        <li>telefon: 514 820 424</li>
+        <li>github: <a href="https://github.com/lukasz-zytko">lukasz-zytko</a></li>
+    </ul>
+<h3>Wyślij wiadomość</h3>
+        <form method="POST">
+            <label for="email">Podaj swój email:</label>
+            <input type="text" id="email" name="email" value="john.smith@example.com"><br><br>
+            <label for="message">Twoja wiadomość:</label><br>
+            <textarea name="message" rows="5" cols="40">...wpisz wiadomość...</textarea><br><br>
+            <input type="submit" value="Wyślij">
+        </form>
+{% endblock %}

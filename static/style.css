@@ -1,0 +1,17 @@
+h1 {
+    background-color: navy;
+    color: ivory;
+    padding: 5px;
+}
+
+h2 {
+    color: green;
+}
+form {
+    background-color: lightskyblue;
+    padding: 5px;
+}
+div#nav {
+    background-color: lightblue;
+    padding: 10px;
+}

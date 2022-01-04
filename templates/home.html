@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        {% block head %}{% endblock %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.CSS') }}">
+    </head>
+    <body>
+        <div id="nav"><a href="me">O mnie</a> | <a href="contact">Kontakt</a></div>
+        <h1>Witam na mojej stronie domowej</h1>
+        <img src="{{ url_for('static', filename='lukasz-zytko.JPG') }}" title="Łukasz Żytko" alt="Łukasz Żytko" width="200">
+        <div id="kontent">{% block content %}{% endblock %}</div>
+    </body>
+</html>
