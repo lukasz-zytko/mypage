@@ -10,7 +10,6 @@ def info():
 @app.route('/mypage/contact', methods=['POST', 'GET'])
 def contact():
     if request.method == "GET":
-        print("GET received")
         return render_template("contact.html")
     elif request.method == "POST":
         print("POST received")
